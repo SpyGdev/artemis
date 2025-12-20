@@ -229,8 +229,30 @@
     <script>
         document.querySelectorAll('video').forEach(video => {
             const container = video.closest('.group');
-            if (container) {
-                container.addEventListener('mouseenter', () => video.play());
+
+            // Check for touch capability/lack of hover
+            const isTouch = window.matchMedia('(hover: none)').matches;
+
+            if (isTouch) {
+                // Mobile: Play when in viewport
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            video.play().catch(e => console.log('Autoplay prevented:', e));
+                        } else {
+                            video.pause();
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                });
+
+                observer.observe(video);
+            } else if (container) {
+                // Desktop: Play on hover
+                container.addEventListener('mouseenter', () => {
+                    video.play().catch(e => console.log('Hover play prevented:', e));
+                });
                 container.addEventListener('mouseleave', () => {
                     video.pause();
                     video.currentTime = 0;
