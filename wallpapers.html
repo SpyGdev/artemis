@@ -38,7 +38,7 @@
         <section class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
             <!-- Batman -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-batman" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Batman.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -47,15 +47,20 @@
                     <span class="text-primary font-medium text-sm">Batman</span>
                     <span id="count-batman" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Batman.tendies" download onclick="incrementCount('batman')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Batman.tendies" download onclick="incrementCount('batman')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Batman', 'wallpaper-batman')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Cap -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-cap" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Cap.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -64,15 +69,20 @@
                     <span class="text-primary font-medium text-sm">Cap</span>
                     <span id="count-cap" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Cap.tendies" download onclick="incrementCount('cap')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Cap.tendies" download onclick="incrementCount('cap')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Cap', 'wallpaper-cap')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Coffee -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-coffee" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Coffee.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -81,15 +91,20 @@
                     <span class="text-primary font-medium text-sm">Coffee</span>
                     <span id="count-coffee" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Coffee.tendies" download onclick="incrementCount('coffee')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Coffee.tendies" download onclick="incrementCount('coffee')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Coffee', 'wallpaper-coffee')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Nothing Shapes -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-nothingshapes" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Nothing_shapes.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -98,16 +113,21 @@
                     <span class="text-primary font-medium text-sm">Nothing Shapes</span>
                     <span id="count-nothingshapes" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Norhing_shapes.tendies" download
-                    onclick="incrementCount('nothingshapes')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Norhing_shapes.tendies" download
+                        onclick="incrementCount('nothingshapes')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Nothing Shapes', 'wallpaper-nothingshapes')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Orange -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-orange" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Orange.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -116,15 +136,20 @@
                     <span class="text-primary font-medium text-sm">Orange</span>
                     <span id="count-orange" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Orange.tendies" download onclick="incrementCount('orange')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Orange.tendies" download onclick="incrementCount('orange')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Orange', 'wallpaper-orange')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Red Balls -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-redballs" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Red_ball.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -133,15 +158,20 @@
                     <span class="text-primary font-medium text-sm">Red Balls</span>
                     <span id="count-redballs" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Red_balls.tendies" download onclick="incrementCount('redballs')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Red_balls.tendies" download onclick="incrementCount('redballs')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Red Balls', 'wallpaper-redballs')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Spider -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-spider" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Spider.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -150,15 +180,20 @@
                     <span class="text-primary font-medium text-sm">Spider</span>
                     <span id="count-spider" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Spider.tendies" download onclick="incrementCount('spider')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Spider.tendies" download onclick="incrementCount('spider')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Spider', 'wallpaper-spider')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Doraemon -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-doraemon" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Doremon.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -167,15 +202,20 @@
                     <span class="text-primary font-medium text-sm">Doraemon</span>
                     <span id="count-doraemon" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/doremon.tendies" download onclick="incrementCount('doraemon')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/doremon.tendies" download onclick="incrementCount('doraemon')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Doraemon', 'wallpaper-doraemon')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Shin-chan -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-shinchan" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Shin-chan.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -184,15 +224,20 @@
                     <span class="text-primary font-medium text-sm">Shin-chan</span>
                     <span id="count-shinchan" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/shin-chan.tendies" download onclick="incrementCount('shinchan')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/shin-chan.tendies" download onclick="incrementCount('shinchan')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Shin-chan', 'wallpaper-shinchan')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Tacos -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-tacos" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Tacos.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -201,15 +246,20 @@
                     <span class="text-primary font-medium text-sm">Tacos</span>
                     <span id="count-tacos" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/tacos.tendies" download onclick="incrementCount('tacos')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/tacos.tendies" download onclick="incrementCount('tacos')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Tacos', 'wallpaper-tacos')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Black Balls -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-blackballs" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Black_balls.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -218,15 +268,20 @@
                     <span class="text-primary font-medium text-sm">Black Balls</span>
                     <span id="count-blackballs" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Black_balls.tendies" download onclick="incrementCount('blackballs')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Black_balls.tendies" download onclick="incrementCount('blackballs')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Black Balls', 'wallpaper-blackballs')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- SpongeBob -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-spongebob" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Spongbob.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -235,14 +290,20 @@
                     <span class="text-primary font-medium text-sm">SpongeBob</span>
                     <span id="count-spongebob" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Spongbob.tendies" download onclick="incrementCount('spongebob')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Spongbob.tendies" download onclick="incrementCount('spongebob')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('SpongeBob', 'wallpaper-spongebob')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
             <!-- Snoopy 2 -->
-            <div class="flex flex-col gap-3">
+            <div id="wallpaper-snoopy2" class="flex flex-col gap-3 scroll-mt-32">
                 <div class="group relative aspect-[9/19.5] border border-neutral-800 bg-neutral-900 overflow-hidden">
                     <video src="/wallpapers/previews/Snoopy 2.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
@@ -251,11 +312,16 @@
                     <span class="text-primary font-medium text-sm">Snoopy 2</span>
                     <span id="count-snoopy2" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
-                <a href="/wallpapers/downloads/Snoopy 2.tendies" download onclick="incrementCount('snoopy2')"
-                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                    Download
-                </a>
-            </div>
+                <div class="flex gap-2">
+                    <a href="/wallpapers/downloads/Snoopy 2.tendies" download onclick="incrementCount('snoopy2')"
+                        class="flex-1 text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors">
+                        Download
+                    </a>
+                    <button onclick="openShare('Snoopy 2', 'wallpaper-snoopy2')"
+                        class="text-xs font-mono text-center text-secondary border border-neutral-800 px-3 py-2 hover:border-accent/50 hover:text-accent transition-colors">
+                        Share
+                    </button>
+                </div>
             </div>
 
         </section>
@@ -267,7 +333,73 @@
             </p>
         </footer>
     </main>
+
+    <!-- Share Dialog -->
+    <dialog id="share-dialog"
+        class="fixed inset-0 m-auto bg-neutral-900 border border-neutral-800 text-white p-6 rounded-xl backdrop:bg-transparent backdrop:backdrop-blur-md shadow-2xl open:animate-fade-in outline-none w-fit h-fit">
+        <div class="flex flex-col gap-4 w-[300px]">
+            <div class="flex justify-between items-start">
+                <h3 class="text-lg font-bold">Share Wallpaper</h3>
+                <button onclick="closeShare()" class="text-secondary hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+            <p class="text-sm text-secondary">Copy the link below to share <span id="share-name"
+                    class="text-accent"></span>.</p>
+            <div class="flex gap-2">
+                <input id="share-input" type="text" readonly
+                    class="bg-black border border-neutral-800 text-secondary text-xs p-2 flex-1 outline-none focus:border-accent/50 font-mono rounded-md">
+                <button onclick="copyShareLink()"
+                    class="text-xs font-mono bg-accent text-black px-3 py-2 hover:bg-accent/80 transition-colors rounded-md">
+                    Copy
+                </button>
+            </div>
+        </div>
+    </dialog>
+
     <script>
+        // Share Logic
+        const shareDialog = document.getElementById('share-dialog');
+        const shareInput = document.getElementById('share-input');
+        const shareName = document.getElementById('share-name');
+
+        function openShare(name, id) {
+            shareName.textContent = name;
+            const url = `${window.location.origin}${window.location.pathname}#${id}`;
+            shareInput.value = url;
+            shareDialog.showModal();
+        }
+
+        function closeShare() {
+            shareDialog.close();
+        }
+
+        function copyShareLink() {
+            shareInput.select();
+            shareInput.setSelectionRange(0, 99999); // For mobile devices
+            navigator.clipboard.writeText(shareInput.value).then(() => {
+                const btn = shareDialog.querySelector('button[onclick="copyShareLink()"]');
+                const originalText = btn.textContent;
+                btn.textContent = 'Copied!';
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                }, 2000);
+            });
+        }
+
+        // Close on backdrop click
+        shareDialog.addEventListener('click', (e) => {
+            const rect = shareDialog.getBoundingClientRect();
+            if (e.clientX < rect.left || e.clientX > rect.right ||
+                e.clientY < rect.top || e.clientY > rect.bottom) {
+                shareDialog.close();
+            }
+        });
+
         // Hover/Touch Logic for Video Playback
         document.querySelectorAll('video').forEach(video => {
             const container = video.closest('.group');
