@@ -1,4 +1,8 @@
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
+
+// Initialize Redis from environment variables
+// (UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN)
+const redis = Redis.fromEnv();
 
 export default async function handler(request, response) {
     if (request.method === 'GET') {
@@ -14,10 +18,10 @@ export default async function handler(request, response) {
         // We can store a hash named 'wallpaper_downloads'
 
         try {
-            const downloads = await kv.hgetall('wallpaper_downloads');
+            const downloads = await redis.hgetall('wallpaper_downloads');
             return response.status(200).json(downloads || {});
         } catch (error) {
-            console.error(error);
+            console.error('Redis Error:', error);
             return response.status(500).json({ error: 'Failed to fetch data' });
         }
     }
@@ -31,10 +35,10 @@ export default async function handler(request, response) {
 
         try {
             // Increment the count for the specific wallpaper in the hash
-            const newCount = await kv.hincrby('wallpaper_downloads', wallpaperId, 1);
+            const newCount = await redis.hincrby('wallpaper_downloads', wallpaperId, 1);
             return response.status(200).json({ count: newCount });
         } catch (error) {
-            console.error(error);
+            console.error('Redis Error:', error);
             return response.status(500).json({ error: 'Failed to increment count' });
         }
     }
