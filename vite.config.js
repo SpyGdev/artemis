@@ -9,6 +9,7 @@ export default defineConfig({
                 socials: resolve(__dirname, 'socials.html'),
                 wallpapers: resolve(__dirname, 'wallpapers.html'),
                 tutorial: resolve(__dirname, 'tutorial.html'),
+                blogs: resolve(__dirname, 'blogs.html'),
             },
         },
     },

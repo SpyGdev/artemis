@@ -43,13 +43,15 @@
                     <video src="/wallpapers/previews/Batman.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Batman</span>
-                    <a href="/wallpapers/downloads/Batman.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-batman" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Batman.tendies" download onclick="incrementCount('batman')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Cap -->
@@ -58,13 +60,15 @@
                     <video src="/wallpapers/previews/Cap.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Cap</span>
-                    <a href="/wallpapers/downloads/Cap.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-cap" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Cap.tendies" download onclick="incrementCount('cap')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Coffee -->
@@ -73,13 +77,15 @@
                     <video src="/wallpapers/previews/Coffee.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Coffee</span>
-                    <a href="/wallpapers/downloads/Coffee.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-coffee" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Coffee.tendies" download onclick="incrementCount('coffee')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Nothing Shapes -->
@@ -88,13 +94,16 @@
                     <video src="/wallpapers/previews/Nothing_shapes.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Nothing Shapes</span>
-                    <a href="/wallpapers/downloads/Norhing_shapes.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-nothingshapes" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Norhing_shapes.tendies" download
+                    onclick="incrementCount('nothingshapes')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Orange -->
@@ -103,13 +112,15 @@
                     <video src="/wallpapers/previews/Orange.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Orange</span>
-                    <a href="/wallpapers/downloads/Orange.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-orange" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Orange.tendies" download onclick="incrementCount('orange')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Red Balls -->
@@ -118,13 +129,15 @@
                     <video src="/wallpapers/previews/Red_ball.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Red Balls</span>
-                    <a href="/wallpapers/downloads/Red_balls.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-redballs" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Red_balls.tendies" download onclick="incrementCount('redballs')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Spider -->
@@ -133,13 +146,15 @@
                     <video src="/wallpapers/previews/Spider.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Spider</span>
-                    <a href="/wallpapers/downloads/Spider.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-spider" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Spider.tendies" download onclick="incrementCount('spider')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Doraemon -->
@@ -148,13 +163,15 @@
                     <video src="/wallpapers/previews/Doremon.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Doraemon</span>
-                    <a href="/wallpapers/downloads/doremon.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-doraemon" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/doremon.tendies" download onclick="incrementCount('doraemon')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Shin-chan -->
@@ -163,13 +180,15 @@
                     <video src="/wallpapers/previews/Shin-chan.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Shin-chan</span>
-                    <a href="/wallpapers/downloads/shin-chan.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-shinchan" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/shin-chan.tendies" download onclick="incrementCount('shinchan')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Tacos -->
@@ -178,13 +197,15 @@
                     <video src="/wallpapers/previews/Tacos.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Tacos</span>
-                    <a href="/wallpapers/downloads/tacos.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-tacos" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/tacos.tendies" download onclick="incrementCount('tacos')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- Black Balls -->
@@ -193,13 +214,15 @@
                     <video src="/wallpapers/previews/Black_balls.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">Black Balls</span>
-                    <a href="/wallpapers/downloads/Black_balls.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-blackballs" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Black_balls.tendies" download onclick="incrementCount('blackballs')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
             <!-- SpongeBob -->
@@ -208,13 +231,15 @@
                     <video src="/wallpapers/previews/Spongbob.MP4" loop muted playsinline
                         class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"></video>
                 </div>
-                <div class="flex flex-col gap-2">
+                <div class="flex items-baseline justify-between">
                     <span class="text-primary font-medium text-sm">SpongeBob</span>
-                    <a href="/wallpapers/downloads/Spongbob.tendies" download
-                        class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
-                        Download
-                    </a>
+                    <span id="count-spongebob" class="text-xs text-secondary font-mono">0 downloads</span>
                 </div>
+                <a href="/wallpapers/downloads/Spongbob.tendies" download onclick="incrementCount('spongebob')"
+                    class="text-xs font-mono text-center text-accent border border-accent/50 px-4 py-2 hover:bg-accent hover:text-black transition-colors w-full">
+                    Download
+                </a>
+            </div>
             </div>
 
         </section>
@@ -227,14 +252,12 @@
         </footer>
     </main>
     <script>
+        // Hover/Touch Logic for Video Playback
         document.querySelectorAll('video').forEach(video => {
             const container = video.closest('.group');
-
-            // Check for touch capability/lack of hover
             const isTouch = window.matchMedia('(hover: none)').matches;
 
             if (isTouch) {
-                // Mobile: Play when in viewport
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
@@ -246,10 +269,8 @@
                 }, {
                     threshold: 0.5
                 });
-
                 observer.observe(video);
             } else if (container) {
-                // Desktop: Play on hover
                 container.addEventListener('mouseenter', () => {
                     video.play().catch(e => console.log('Hover play prevented:', e));
                 });
@@ -259,6 +280,45 @@
                 });
             }
         });
+
+        // Download Counter Logic
+        async function fetchCounts() {
+            try {
+                const res = await fetch('/api/downloads');
+                const data = await res.json();
+
+                Object.keys(data).forEach(id => {
+                    const el = document.getElementById(`count-${id}`);
+                    if (el) {
+                        el.textContent = `${data[id].toLocaleString()} downloads`;
+                    }
+                });
+            } catch (err) {
+                console.error('Failed to fetch stats:', err);
+            }
+        }
+
+        async function incrementCount(id) {
+            // Optimistic update
+            const el = document.getElementById(`count-${id}`);
+            if (el) {
+                const current = parseInt(el.textContent.replace(/\D/g, '')) || 0;
+                el.textContent = `${(current + 1).toLocaleString()} downloads`;
+            }
+
+            try {
+                await fetch('/api/downloads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ wallpaperId: id })
+                });
+            } catch (err) {
+                console.error('Failed to register download:', err);
+            }
+        }
+
+        // Initialize
+        fetchCounts();
     </script>
     <script type="module" src="/src/main.js"></script>
 </body>
